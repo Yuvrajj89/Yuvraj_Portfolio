@@ -3,18 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yuvraj Jadhav | HR Operations & Salesforce / Software Engineer</title>
   
+  <!-- Primary Meta Tags -->
+  <title>Yuvraj Anil Jadhav | HR Operations & Salesforce / Software Engineer</title>
+  <meta name="title" content="Yuvraj Anil Jadhav | HR Operations & Salesforce / Software Engineer" />
+  <meta name="description" content="Portfolio of Yuvraj Anil Jadhav — Bridging People Strategy (HR Operations & Lifecycle) with Systems Engineering (Salesforce LWC, Apex, React)." />
+  <meta name="author" content="Yuvraj Anil Jadhav" />
+
+  <!-- Open Graph / LinkedIn / WhatsApp / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Yuvraj Anil Jadhav | HR Operations & Salesforce / Software Engineer" />
+  <meta property="og:description" content="BSc CS + MBA. Bridging People Operations, Leadership MIS, and Employee Engagement with Salesforce (Apex/LWC) and React Engineering." />
+  <meta property="og:image" content="./profile.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Yuvraj Anil Jadhav | HR Operations & Salesforce / Software Engineer" />
+  <meta name="twitter:description" content="BSc CS + MBA. Bridging People Operations, Leadership MIS, and Employee Engagement with Salesforce (Apex/LWC) and React Engineering." />
+  <meta name="twitter:image" content="./profile.png" />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Font Awesome Icons -->
+  
+  <!-- Font Awesome Icons CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Animate On Scroll (AOS) CSS CDN -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
   <script>
     tailwind.config = {
       darkMode: 'class',
       theme: {
         extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
           colors: {
             fuchsiaBrand: '#d946ef',
             skyBrand: '#0ea5e9',
@@ -23,11 +52,21 @@
       }
     }
   </script>
-</head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-fuchsia-500 selection:text-white">
 
-  <!-- Navigation -->
-  <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800">
+  <style>
+    /* Subtle hover lift for cards */
+    .hover-lift {
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+    .hover-lift:hover {
+      transform: translateY(-4px);
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-fuchsia-500 selection:text-white overflow-x-hidden">
+
+  <!-- ================= NAVIGATION ================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800/80">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
       <a href="#" class="text-lg font-bold tracking-tight text-white flex items-center gap-2">
         <span class="w-3 h-3 rounded-full bg-gradient-to-r from-fuchsia-500 to-sky-500"></span>
@@ -41,33 +80,33 @@
         <a href="#tech-skills" class="hover:text-sky-400 transition">Tech &amp; Salesforce</a>
         <a href="#projects" class="hover:text-white transition">Projects</a>
         <a href="#experience" class="hover:text-white transition">Experience</a>
-        <a href="#contact" class="px-4 py-1.5 rounded-lg bg-gradient-to-r from-fuchsia-600 to-sky-600 text-white font-medium hover:opacity-90 transition">Contact</a>
+        <a href="./resume.html" target="_blank" class="hover:text-sky-400 transition flex items-center gap-1"><i class="fa-solid fa-file-lines text-xs"></i> Resume</a>
+        <a href="#contact" class="px-4 py-1.5 rounded-lg bg-gradient-to-r from-fuchsia-600 to-sky-600 text-white font-medium hover:opacity-90 transition shadow-sm">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO & RECRUITER SUMMARY SECTION -->
+  <!-- ================= HERO & RECRUITER EXECUTIVE SUMMARY ================= -->
   <section id="about" class="pt-32 pb-16 px-6 max-w-6xl mx-auto">
-    <div class="bg-gradient-to-br from-slate-900/95 via-slate-900/50 to-slate-950 border border-slate-800 rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+    <div data-aos="fade-down" class="bg-gradient-to-br from-slate-900/95 via-slate-900/50 to-slate-950 border border-slate-800 rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
       
-      <!-- Ambient light gradients -->
+      <!-- Ambient Lighting -->
       <div class="absolute -top-24 -left-24 w-80 h-80 bg-fuchsia-600/15 rounded-full blur-3xl pointer-events-none"></div>
       <div class="absolute -bottom-24 -right-24 w-80 h-80 bg-sky-600/15 rounded-full blur-3xl pointer-events-none"></div>
 
       <div class="flex flex-col lg:flex-row items-center gap-10 relative z-10">
         
         <!-- FINE-TUNED STUDIO CIRCULAR PROFILE CARD -->
-        <div class="flex-shrink-0 text-center flex flex-col items-center">
+        <div data-aos="zoom-in" data-aos-delay="150" class="flex-shrink-0 text-center flex flex-col items-center">
           <div class="relative group">
-            <!-- Polished animated dual-gradient outer glow -->
+            <!-- Glowing outer dual-gradient ring -->
             <div class="absolute -inset-1 bg-gradient-to-tr from-fuchsia-500 via-indigo-500 to-sky-400 rounded-full blur-md opacity-80 group-hover:opacity-100 transition duration-500"></div>
             
-            <!-- Circular Frame with studio gradient backdrop (ideal for background-removed transparent PNGs) -->
-            <!-- Circular Frame with studio gradient backdrop -->
+            <!-- Circular frame with dark studio vignette -->
             <div class="relative w-48 h-48 sm:w-56 sm:h-56 rounded-full p-1 bg-gradient-to-b from-slate-700 via-slate-900 to-slate-950 shadow-2xl flex items-center justify-center overflow-hidden">
-              <div class="w-full h-full rounded-full bg-gradient-to-b from-slate-800/80 to-slate-950 overflow-hidden flex items-center justify-center">
+              <div class="w-full h-full rounded-full bg-gradient-to-b from-slate-800/90 to-slate-950 overflow-hidden flex items-center justify-center">
                 <img 
-                  src="./Profile.jpg" 
+                  src="./profile.png" 
                   alt="Yuvraj Anil Jadhav" 
                   class="w-full h-full object-cover object-top filter contrast-105 brightness-105 drop-shadow-xl"
                   onerror="if (this.src.indexOf('profile.png') !== -1) { this.src = './profile.jpg'; } else { this.src = 'https://ui-avatars.com/api/?name=Yuvraj+Jadhav&background=d946ef&color=fff&size=256&bold=true'; }" 
@@ -99,39 +138,53 @@
             HR Operations Specialist + Salesforce &amp; Frontend Software Engineer
           </h2>
 
-          <!-- Recruiter Elevator Pitch -->
+          <!-- Recruiter Pitch -->
           <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-3xl">
-            A rare hybrid professional backed by an <strong>MBA in Marketing</strong> and a <strong>BSc in Computer Science</strong>. I blend domain expertise in <strong>employee lifecycle management, conflict resolution, and leadership MIS reporting</strong> with direct technical capacity in <strong>Salesforce LWC/Apex automations and React web applications</strong>. I eliminate operational bottlenecks by bridging people workflows with software engineering.
+            A rare hybrid professional backed by an <strong>MBA in Marketing</strong> and a <strong>BSc in Computer Science</strong>. I blend domain expertise in <strong>employee lifecycle management, conflict resolution, and leadership MIS reporting</strong> with direct technical capability in <strong>Salesforce LWC/Apex automations and React web applications</strong>. I eliminate operational bottlenecks by bridging people workflows with software engineering.
           </p>
 
           <!-- Dynamic Real-Time Metrics Bar -->
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 text-left">
-            <div class="p-3 bg-slate-950/70 border border-slate-800 rounded-xl">
+            <div class="p-3 bg-slate-950/70 border border-slate-800 rounded-xl hover-lift">
               <div class="text-xs text-slate-400">Total Experience</div>
               <div class="text-sm font-bold text-white mt-0.5" id="total-exp-metric">Calculating...</div>
             </div>
-            <div class="p-3 bg-slate-950/70 border border-slate-800 rounded-xl">
+            <div class="p-3 bg-slate-950/70 border border-slate-800 rounded-xl hover-lift">
               <div class="text-xs text-slate-400">Academic Blend</div>
               <div class="text-sm font-bold text-fuchsia-400 mt-0.5">BSc CS + MBA</div>
             </div>
-            <div class="p-3 bg-slate-950/70 border border-slate-800 rounded-xl">
+            <div class="p-3 bg-slate-950/70 border border-slate-800 rounded-xl hover-lift">
               <div class="text-xs text-slate-400">Core CRM</div>
               <div class="text-sm font-bold text-sky-400 mt-0.5">Salesforce (LWC/Apex)</div>
             </div>
-            <div class="p-3 bg-slate-950/70 border border-slate-800 rounded-xl">
+            <div class="p-3 bg-slate-950/70 border border-slate-800 rounded-xl hover-lift">
               <div class="text-xs text-slate-400">Mobility</div>
               <div class="text-sm font-bold text-emerald-400 mt-0.5">Pune / Relocate / Remote</div>
             </div>
           </div>
 
-          <!-- CTAs & Direct Contact -->
-          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+          <!-- CTAs: Hire Me, View Resume & Direct Links -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-3">
             <a href="mailto:jadhavyuvraj89@gmail.com" class="px-5 py-2.5 rounded-lg bg-gradient-to-r from-fuchsia-600 to-pink-600 hover:from-fuchsia-700 hover:to-pink-700 font-semibold text-white text-sm transition shadow-lg shadow-fuchsia-600/20 flex items-center gap-2">
               <i class="fa-solid fa-envelope"></i> Hire Me / Email
             </a>
-            <a href="tel:+919284351808" class="px-5 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 font-semibold text-slate-200 text-sm transition flex items-center gap-2">
-              <i class="fa-solid fa-phone text-emerald-400"></i> +91 9284351808
+            
+            <!-- DIRECT LINK TO resume.html (OPENS IN NEW TAB) -->
+            <a 
+              href="./resume.html" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="px-5 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 font-semibold text-slate-200 text-sm transition flex items-center gap-2 hover:border-sky-500 shadow-sm"
+              title="Open presentable ATS resume in new tab"
+            >
+              <i class="fa-solid fa-file-lines text-sky-400"></i> 
+              <span>View Resume</span>
             </a>
+
+            <a href="tel:+919284351808" class="px-4 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-800 font-semibold text-slate-300 text-sm transition flex items-center gap-2">
+              <i class="fa-solid fa-phone text-emerald-400"></i> Call
+            </a>
+
             <div class="flex items-center gap-4 text-xl text-slate-400 px-2">
               <a href="https://www.linkedin.com/in/yuvraj-jadhav-9284351808v" target="_blank" class="hover:text-fuchsia-400 transition" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
               <a href="https://github.com/Yuvrajj89" target="_blank" class="hover:text-sky-400 transition" title="GitHub"><i class="fa-brands fa-github"></i></a>
@@ -145,12 +198,12 @@
     </div>
   </section>
 
-  <!-- The Dual Advantage (Comparison Cards) -->
+  <!-- ================= THE DUAL ADVANTAGE (COMPARISON CARDS) ================= -->
   <section id="dual-core" class="py-12 max-w-6xl mx-auto px-6">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       
       <!-- HR & Soft Skills Pillar -->
-      <div class="bg-gradient-to-b from-fuchsia-950/30 to-slate-900 border border-fuchsia-800/40 rounded-2xl p-8 flex flex-col justify-between">
+      <div data-aos="fade-right" class="bg-gradient-to-b from-fuchsia-950/30 to-slate-900 border border-fuchsia-800/40 rounded-2xl p-8 flex flex-col justify-between hover-lift">
         <div>
           <div class="flex items-center justify-between mb-4">
             <span class="text-xs uppercase tracking-widest font-bold text-fuchsia-400 bg-fuchsia-950/60 px-3 py-1 rounded-md border border-fuchsia-800/50">Human Resources &amp; People</span>
@@ -181,7 +234,7 @@
       </div>
 
       <!-- Technical & Engineering Pillar -->
-      <div class="bg-gradient-to-b from-sky-950/30 to-slate-900 border border-sky-800/40 rounded-2xl p-8 flex flex-col justify-between">
+      <div data-aos="fade-left" class="bg-gradient-to-b from-sky-950/30 to-slate-900 border border-sky-800/40 rounded-2xl p-8 flex flex-col justify-between hover-lift">
         <div>
           <div class="flex items-center justify-between mb-4">
             <span class="text-xs uppercase tracking-widest font-bold text-sky-400 bg-sky-950/60 px-3 py-1 rounded-md border border-sky-800/50">Systems &amp; Architecture</span>
@@ -214,20 +267,20 @@
     </div>
   </section>
 
-  <!-- Section 1: HR & Soft Skills Details -->
-  <section id="hr-skills" class="py-16 border-t border-slate-800 bg-slate-900/30">
+  <!-- ================= SECTION 1: HR & SOFT SKILLS ================= -->
+  <section id="hr-skills" class="py-16 border-t border-slate-800/80 bg-slate-900/30">
     <div class="max-w-6xl mx-auto px-6">
       
-      <div class="flex items-center gap-3 mb-2">
+      <div data-aos="fade-up" class="flex items-center gap-3 mb-2">
         <span class="p-2 rounded-lg bg-fuchsia-950 text-fuchsia-400 text-lg"><i class="fa-solid fa-hand-holding-heart"></i></span>
         <span class="text-xs font-bold uppercase tracking-widest text-fuchsia-400">Domain One</span>
       </div>
-      <h2 class="text-3xl font-bold text-white tracking-tight">HR Operations, People &amp; Soft Skills</h2>
-      <p class="text-slate-400 text-sm mt-1 mb-12 max-w-2xl">Proven experience supporting high-performing teams, executing engagement campaigns, and coordinating executive workforce data.</p>
+      <h2 data-aos="fade-up" data-aos-delay="100" class="text-3xl font-bold text-white tracking-tight">HR Operations, People &amp; Soft Skills</h2>
+      <p data-aos="fade-up" data-aos-delay="150" class="text-slate-400 text-sm mt-1 mb-12 max-w-2xl">Proven experience supporting high-performing teams, executing engagement campaigns, and coordinating executive workforce data.</p>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         
-        <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-fuchsia-500/50 transition">
+        <div data-aos="fade-up" data-aos-delay="200" class="bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-fuchsia-500/50 transition hover-lift">
           <div class="w-10 h-10 rounded-lg bg-fuchsia-950 flex items-center justify-center text-fuchsia-400 mb-4 text-xl">
             <i class="fa-solid fa-user-check"></i>
           </div>
@@ -243,7 +296,7 @@
           </ul>
         </div>
 
-        <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-fuchsia-500/50 transition">
+        <div data-aos="fade-up" data-aos-delay="300" class="bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-fuchsia-500/50 transition hover-lift">
           <div class="w-10 h-10 rounded-lg bg-pink-950 flex items-center justify-center text-pink-400 mb-4 text-xl">
             <i class="fa-solid fa-comments"></i>
           </div>
@@ -259,7 +312,7 @@
           </ul>
         </div>
 
-        <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-fuchsia-500/50 transition">
+        <div data-aos="fade-up" data-aos-delay="400" class="bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-fuchsia-500/50 transition hover-lift">
           <div class="w-10 h-10 rounded-lg bg-purple-950 flex items-center justify-center text-purple-400 mb-4 text-xl">
             <i class="fa-solid fa-chart-pie"></i>
           </div>
@@ -279,20 +332,20 @@
     </div>
   </section>
 
-  <!-- Section 2: Technical & Software Engineering Details -->
+  <!-- ================= SECTION 2: TECHNICAL & SOFTWARE ENGINEERING ================= -->
   <section id="tech-skills" class="py-16 border-t border-slate-800 bg-slate-900/10">
     <div class="max-w-6xl mx-auto px-6">
       
-      <div class="flex items-center gap-3 mb-2">
+      <div data-aos="fade-up" class="flex items-center gap-3 mb-2">
         <span class="p-2 rounded-lg bg-sky-950 text-sky-400 text-lg"><i class="fa-solid fa-terminal"></i></span>
         <span class="text-xs font-bold uppercase tracking-widest text-sky-400">Domain Two</span>
       </div>
-      <h2 class="text-3xl font-bold text-white tracking-tight">Technical &amp; Software Engineering</h2>
-      <p class="text-slate-400 text-sm mt-1 mb-12 max-w-2xl">Hands-on architecture in Salesforce Cloud solutions, component development, and modern JavaScript applications.</p>
+      <h2 data-aos="fade-up" data-aos-delay="100" class="text-3xl font-bold text-white tracking-tight">Technical &amp; Software Engineering</h2>
+      <p data-aos="fade-up" data-aos-delay="150" class="text-slate-400 text-sm mt-1 mb-12 max-w-2xl">Hands-on architecture in Salesforce Cloud solutions, component development, and modern JavaScript applications.</p>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         
-        <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-sky-500/50 transition">
+        <div data-aos="fade-up" data-aos-delay="200" class="bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-sky-500/50 transition hover-lift">
           <div class="w-10 h-10 rounded-lg bg-sky-950 flex items-center justify-center text-sky-400 mb-4 text-xl">
             <i class="fa-brands fa-salesforce"></i>
           </div>
@@ -310,7 +363,7 @@
           </div>
         </div>
 
-        <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-sky-500/50 transition">
+        <div data-aos="fade-up" data-aos-delay="300" class="bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-sky-500/50 transition hover-lift">
           <div class="w-10 h-10 rounded-lg bg-indigo-950 flex items-center justify-center text-indigo-400 mb-4 text-xl">
             <i class="fa-solid fa-sliders"></i>
           </div>
@@ -328,7 +381,7 @@
           </div>
         </div>
 
-        <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-sky-500/50 transition">
+        <div data-aos="fade-up" data-aos-delay="400" class="bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-sky-500/50 transition hover-lift">
           <div class="w-10 h-10 rounded-lg bg-cyan-950 flex items-center justify-center text-cyan-400 mb-4 text-xl">
             <i class="fa-brands fa-react"></i>
           </div>
@@ -350,9 +403,9 @@
     </div>
   </section>
 
-  <!-- Featured Flagship: HR Force -->
+  <!-- ================= FLAGSHIP CROSS-DISCIPLINARY SPOTLIGHT: HR FORCE ================= -->
   <section class="py-12 max-w-6xl mx-auto px-6">
-    <div class="bg-gradient-to-r from-fuchsia-950/40 via-slate-900 to-sky-950/40 border border-slate-800 rounded-2xl p-8 sm:p-10">
+    <div data-aos="zoom-in" class="bg-gradient-to-r from-fuchsia-950/40 via-slate-900 to-sky-950/40 border border-slate-800 rounded-2xl p-8 sm:p-10 hover-lift">
       <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
         <div class="space-y-4 max-w-2xl">
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-fuchsia-500/20 text-fuchsia-300 text-xs font-semibold uppercase">
@@ -370,7 +423,7 @@
           </div>
         </div>
         <div class="w-full lg:w-auto text-center lg:text-right">
-          <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl space-y-2">
+          <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl space-y-2 shadow-lg">
             <div class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-sky-400">100% Custom</div>
             <div class="text-xs text-slate-400">Full HR Data Lifecycle on Salesforce</div>
           </div>
@@ -379,14 +432,15 @@
     </div>
   </section>
 
-  <!-- Projects Section with Filter -->
+  <!-- ================= PROJECTS PORTFOLIO (FILTERABLE) ================= -->
   <section id="projects" class="py-16 max-w-6xl mx-auto px-6">
-    <div class="text-center max-w-2xl mx-auto mb-10">
+    <div data-aos="fade-up" class="text-center max-w-2xl mx-auto mb-10">
       <h2 class="text-3xl font-bold text-white tracking-tight">Projects Portfolio</h2>
       <p class="text-slate-400 text-sm mt-1">Demonstrating both enterprise CRM architecture and web application development.</p>
       
+      <!-- Filter Buttons -->
       <div class="flex items-center justify-center gap-2 mt-6">
-        <button onclick="filterProjects('all')" id="btn-all" class="filter-btn px-4 py-1.5 rounded-md text-xs font-semibold bg-white text-slate-900 transition">
+        <button onclick="filterProjects('all')" id="btn-all" class="filter-btn px-4 py-1.5 rounded-md text-xs font-semibold bg-white text-slate-900 transition shadow-sm">
           All Projects
         </button>
         <button onclick="filterProjects('salesforce')" id="btn-salesforce" class="filter-btn px-4 py-1.5 rounded-md text-xs font-semibold bg-slate-800 text-slate-300 hover:text-white transition">
@@ -401,7 +455,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
       
       <!-- Project 1: HR Force -->
-      <div class="project-card bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col justify-between" data-category="salesforce">
+      <div data-aos="fade-up" class="project-card bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col justify-between hover-lift" data-category="salesforce">
         <div>
           <div class="flex items-center justify-between mb-3">
             <span class="text-xs font-semibold text-fuchsia-400 bg-fuchsia-950/80 px-2 py-0.5 rounded border border-fuchsia-800/60">HR Tech + LWC</span>
@@ -420,7 +474,7 @@
       </div>
 
       <!-- Project 2: ProjectVista Suite -->
-      <div class="project-card bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col justify-between" data-category="salesforce">
+      <div data-aos="fade-up" data-aos-delay="100" class="project-card bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col justify-between hover-lift" data-category="salesforce">
         <div>
           <div class="flex items-center justify-between mb-3">
             <span class="text-xs font-semibold text-sky-400 bg-sky-950/80 px-2 py-0.5 rounded border border-sky-800/60">Salesforce LWC</span>
@@ -439,7 +493,7 @@
       </div>
 
       <!-- Project 3: WayGo Cab Booking -->
-      <div class="project-card bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col justify-between" data-category="salesforce">
+      <div data-aos="fade-up" data-aos-delay="200" class="project-card bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col justify-between hover-lift" data-category="salesforce">
         <div>
           <div class="flex items-center justify-between mb-3">
             <span class="text-xs font-semibold text-sky-400 bg-sky-950/80 px-2 py-0.5 rounded border border-sky-800/60">Salesforce App</span>
@@ -458,7 +512,7 @@
       </div>
 
       <!-- Project 4: News-Monkey -->
-      <div class="project-card bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col justify-between" data-category="frontend">
+      <div data-aos="fade-up" class="project-card bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col justify-between hover-lift" data-category="frontend">
         <div>
           <div class="flex items-center justify-between mb-3">
             <span class="text-xs font-semibold text-cyan-400 bg-cyan-950/80 px-2 py-0.5 rounded border border-cyan-800/60">React &amp; REST API</span>
@@ -476,7 +530,7 @@
       </div>
 
       <!-- Project 5: Text Utils -->
-      <div class="project-card bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col justify-between" data-category="frontend">
+      <div data-aos="fade-up" data-aos-delay="100" class="project-card bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col justify-between hover-lift" data-category="frontend">
         <div>
           <div class="flex items-center justify-between mb-3">
             <span class="text-xs font-semibold text-cyan-400 bg-cyan-950/80 px-2 py-0.5 rounded border border-cyan-800/60">React Utility</span>
@@ -494,7 +548,7 @@
       </div>
 
       <!-- Project 6: Stone Paper Scissor -->
-      <div class="project-card bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col justify-between" data-category="frontend">
+      <div data-aos="fade-up" data-aos-delay="200" class="project-card bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col justify-between hover-lift" data-category="frontend">
         <div>
           <div class="flex items-center justify-between mb-3">
             <span class="text-xs font-semibold text-emerald-400 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-800/60">JavaScript Mini-Game</span>
@@ -514,21 +568,21 @@
     </div>
   </section>
 
-  <!-- Work Experience: REAL-TIME DYNAMIC TENURE -->
+  <!-- ================= WORK EXPERIENCE (DYNAMIC REAL-TIME TENURE) ================= -->
   <section id="experience" class="py-16 border-t border-slate-800 bg-slate-900/40">
     <div class="max-w-4xl mx-auto px-6">
       
-      <div class="text-center max-w-2xl mx-auto mb-16">
+      <div data-aos="fade-up" class="text-center max-w-2xl mx-auto mb-16">
         <h2 class="text-3xl font-bold text-white tracking-tight">Work Experience</h2>
         <p class="text-slate-400 text-sm mt-1">
-          <span id="total-exp-sub" class="text-sky-400 font-semibold">2+ Years</span> of combined professional experience across HR operations and software development.
+          <span id="total-exp-sub" class="text-sky-400 font-semibold">Calculating...</span> of combined professional experience across HR operations and software development.
         </p>
       </div>
 
       <div class="space-y-10 border-l-2 border-slate-800 ml-4 pl-6 relative">
         
-        <!-- Cybage Software (Dynamically Calculated) -->
-        <div class="relative">
+        <!-- Cybage Software (Dynamic) -->
+        <div data-aos="fade-up" class="relative">
           <div class="w-3.5 h-3.5 bg-gradient-to-r from-fuchsia-500 to-sky-500 rounded-full absolute -left-[31px] top-1.5 ring-4 ring-slate-950"></div>
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
             <h3 class="text-lg font-bold text-white">HRD Executive &bull; Operations &amp; Technology Bridge</h3>
@@ -545,7 +599,7 @@
         </div>
 
         <!-- OctaNet -->
-        <div class="relative">
+        <div data-aos="fade-up" class="relative">
           <div class="w-3.5 h-3.5 bg-cyan-500 rounded-full absolute -left-[31px] top-1.5 ring-4 ring-slate-950"></div>
           <div class="flex flex-col sm:flex-row sm:items-center justify-between">
             <h3 class="text-lg font-bold text-white">Web Developer Intern</h3>
@@ -558,7 +612,7 @@
         </div>
 
         <!-- Engineered Food Concepts -->
-        <div class="relative">
+        <div data-aos="fade-up" class="relative">
           <div class="w-3.5 h-3.5 bg-slate-600 rounded-full absolute -left-[31px] top-1.5 ring-4 ring-slate-950"></div>
           <div class="flex flex-col sm:flex-row sm:items-center justify-between">
             <h3 class="text-lg font-bold text-white">Field Sales Executive</h3>
@@ -571,7 +625,7 @@
         </div>
 
         <!-- It's My Design -->
-        <div class="relative">
+        <div data-aos="fade-up" class="relative">
           <div class="w-3.5 h-3.5 bg-slate-600 rounded-full absolute -left-[31px] top-1.5 ring-4 ring-slate-950"></div>
           <div class="flex flex-col sm:flex-row sm:items-center justify-between">
             <h3 class="text-lg font-bold text-white">Social Media Manager</h3>
@@ -587,9 +641,9 @@
     </div>
   </section>
 
-  <!-- Education & Credentials -->
+  <!-- ================= EDUCATION & CREDENTIALS ================= -->
   <section class="py-16 max-w-6xl mx-auto px-6">
-    <div class="text-center max-w-2xl mx-auto mb-12">
+    <div data-aos="fade-up" class="text-center max-w-2xl mx-auto mb-12">
       <h2 class="text-3xl font-bold text-white tracking-tight">Academic Degrees &amp; Certifications</h2>
       <p class="text-slate-400 text-sm mt-1">A dual academic foundation in business management and computer science.</p>
     </div>
@@ -597,7 +651,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       
       <!-- MBA Degree -->
-      <div class="bg-slate-900 border border-fuchsia-900/30 p-6 rounded-xl flex items-start gap-4">
+      <div data-aos="fade-right" class="bg-slate-900 border border-fuchsia-900/30 p-6 rounded-xl flex items-start gap-4 hover-lift">
         <div class="w-12 h-12 rounded-lg bg-fuchsia-950/60 flex items-center justify-center text-fuchsia-400 text-xl flex-shrink-0">
           <i class="fa-solid fa-graduation-cap"></i>
         </div>
@@ -610,7 +664,7 @@
       </div>
 
       <!-- BSc CS Degree -->
-      <div class="bg-slate-900 border border-sky-900/30 p-6 rounded-xl flex items-start gap-4">
+      <div data-aos="fade-left" class="bg-slate-900 border border-sky-900/30 p-6 rounded-xl flex items-start gap-4 hover-lift">
         <div class="w-12 h-12 rounded-lg bg-sky-950/60 flex items-center justify-center text-sky-400 text-xl flex-shrink-0">
           <i class="fa-solid fa-laptop-code"></i>
         </div>
@@ -625,14 +679,14 @@
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
-      <div class="bg-slate-900/50 border border-slate-800 p-4 rounded-lg flex items-center gap-3">
+      <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-900/50 border border-slate-800 p-4 rounded-lg flex items-center gap-3 hover-lift">
         <i class="fa-solid fa-certificate text-fuchsia-400 text-lg"></i>
         <div>
           <div class="text-sm font-semibold text-white">Web Design Course</div>
           <div class="text-xs text-slate-400">Pune Institute Of Design</div>
         </div>
       </div>
-      <div class="bg-slate-900/50 border border-slate-800 p-4 rounded-lg flex items-center gap-3">
+      <div data-aos="fade-up" data-aos-delay="200" class="bg-slate-900/50 border border-slate-800 p-4 rounded-lg flex items-center gap-3 hover-lift">
         <i class="fa-solid fa-certificate text-sky-400 text-lg"></i>
         <div>
           <div class="text-sm font-semibold text-white">Fundamentals of Digital Marketing</div>
@@ -642,9 +696,9 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- ================= CONTACT SECTION ================= -->
   <section id="contact" class="py-20 border-t border-slate-800 bg-slate-900/60">
-    <div class="max-w-4xl mx-auto px-6 text-center">
+    <div data-aos="zoom-in" class="max-w-4xl mx-auto px-6 text-center">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/60 border border-emerald-800/60 text-emerald-300 text-xs font-semibold uppercase tracking-wider mb-4">
         Immediate Joiner &bull; Open to Pune, Relocation or Remote
       </div>
@@ -654,19 +708,19 @@
       </p>
 
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto mb-10">
-        <a href="mailto:jadhavyuvraj89@gmail.com" class="p-5 bg-slate-900 border border-slate-800 rounded-xl hover:border-fuchsia-500 transition group">
+        <a href="mailto:jadhavyuvraj89@gmail.com" class="p-5 bg-slate-900 border border-slate-800 rounded-xl hover:border-fuchsia-500 transition group hover-lift">
           <i class="fa-solid fa-envelope text-fuchsia-400 text-2xl mb-2 group-hover:scale-110 transition"></i>
           <p class="text-xs text-slate-400">Email Directly</p>
           <p class="text-xs font-semibold text-white mt-1 break-all">jadhavyuvraj89@gmail.com</p>
         </a>
 
-        <a href="tel:+919284351808" class="p-5 bg-slate-900 border border-slate-800 rounded-xl hover:border-sky-500 transition group">
+        <a href="tel:+919284351808" class="p-5 bg-slate-900 border border-slate-800 rounded-xl hover:border-sky-500 transition group hover-lift">
           <i class="fa-solid fa-phone text-sky-400 text-2xl mb-2 group-hover:scale-110 transition"></i>
           <p class="text-xs text-slate-400">Call / WhatsApp</p>
           <p class="text-xs font-semibold text-white mt-1">+91 9284351808</p>
         </a>
 
-        <a href="https://www.linkedin.com/in/yuvraj-jadhav-9284351808v" target="_blank" class="p-5 bg-slate-900 border border-slate-800 rounded-xl hover:border-fuchsia-500 transition group">
+        <a href="https://www.linkedin.com/in/yuvraj-jadhav-9284351808v" target="_blank" class="p-5 bg-slate-900 border border-slate-800 rounded-xl hover:border-fuchsia-500 transition group hover-lift">
           <i class="fa-brands fa-linkedin text-fuchsia-400 text-2xl mb-2 group-hover:scale-110 transition"></i>
           <p class="text-xs text-slate-400">LinkedIn</p>
           <p class="text-xs font-semibold text-white mt-1">Yuvraj Jadhav</p>
@@ -677,9 +731,20 @@
     </div>
   </section>
 
-  <!-- Real-Time Experience Calculation & Filtering Script -->
+  <!-- ================= AOS (ANIMATE ON SCROLL) JS CDN ================= -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- ================= SCRIPTS: REAL-TIME CALC & PROJECT FILTERING ================= -->
   <script>
-    // 1. DYNAMIC EXPERIENCE CALCULATOR
+    // 1. Initialize Animate On Scroll (AOS)
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 60,
+      easing: 'ease-out-cubic'
+    });
+
+    // 2. DYNAMIC REAL-TIME EXPERIENCE CALCULATOR
     function calculateRealTimeExperience() {
       // Cybage Software Start Date: October 1, 2023
       const cybageStartDate = new Date(2023, 9, 1); // 9 represents October (0-indexed)
@@ -696,7 +761,7 @@
       const cybRemainingMonths = monthsAtCybage % 12;
       const cybageDurationStr = `${cybYears} Yr${cybYears !== 1 ? 's' : ''}, ${cybRemainingMonths} Mo${cybRemainingMonths !== 1 ? 's' : ''}`;
 
-      // Prior internships & roles (OctaNet: 1 mo + Engineered Food: 3 mos + It's My Design: 2 mos = 6 months)
+      // Prior experience: OctaNet (1 mo) + Engineered Food (3 mos) + It's My Design (2 mos) = 6 months
       const priorExperienceMonths = 6;
       const totalOverallMonths = monthsAtCybage + priorExperienceMonths;
 
@@ -704,7 +769,7 @@
       const totRemainingMonths = totalOverallMonths % 12;
       const totalDurationStr = `${totYears} Yrs, ${totRemainingMonths} Mos`;
 
-      // Update UI in real-time
+      // Update UI Elements
       const pill = document.getElementById('total-exp-pill');
       const metric = document.getElementById('total-exp-metric');
       const sub = document.getElementById('total-exp-sub');
@@ -716,18 +781,18 @@
       if (cybageEl) cybageEl.textContent = cybageDurationStr;
     }
 
-    // 2. PROJECT FILTERING
+    // 3. PROJECT FILTERING
     function filterProjects(category) {
       const cards = document.querySelectorAll('.project-card');
       const buttons = document.querySelectorAll('.filter-btn');
 
       buttons.forEach(btn => {
-        btn.classList.remove('bg-white', 'text-slate-900');
+        btn.classList.remove('bg-white', 'text-slate-900', 'shadow-sm');
         btn.classList.add('bg-slate-800', 'text-slate-300');
       });
       const activeBtn = document.getElementById(`btn-${category}`);
       if (activeBtn) {
-        activeBtn.classList.add('bg-white', 'text-slate-900');
+        activeBtn.classList.add('bg-white', 'text-slate-900', 'shadow-sm');
         activeBtn.classList.remove('bg-slate-800', 'text-slate-300');
       }
 
@@ -738,9 +803,12 @@
           card.classList.add('hidden');
         }
       });
+      
+      // Refresh AOS positions after filtering
+      AOS.refresh();
     }
 
-    // Run dynamic calculation as soon as DOM loads
+    // Initialize real-time calculation immediately on DOM ready
     document.addEventListener('DOMContentLoaded', calculateRealTimeExperience);
   </script>
 
